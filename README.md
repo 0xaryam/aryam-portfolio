@@ -1,12 +1,12 @@
 # 🌐 Aryam Personal Website
 
-A personal portfolio website developed using **HTML** and published with **GitHub Pages**.
+A personal portfolio website developed using **HTML** and published with **GitHub Pages**
 
 ## 📖 Project Overview
 
-This project was created as part of the **Smart Methods Front-End Task**. The goal was to design and develop a simple personal website using HTML and publish it on GitHub.
+This project was created as part of the **Smart Methods Front-End Task** The goal was to design and develop a simple personal website using HTML and publish it on GitHub
 
-The website introduces me, presents my background, and serves as the first version of my personal online portfolio.
+The website introduces me, presents my background, and serves as the first version of my personal online portfolio
 
 ---
 
@@ -54,9 +54,9 @@ https://0xaryam.github.io/aryam-website/
 git clone https://github.com/0xaryam/aryam-website.git
 ```
 
-2. Open the project folder.
+2. Open the project folder
 
-3. Open `index.html` in any web browser.
+3. Open `index.html` in any web browser
 
 ---
 
@@ -94,6 +94,6 @@ https://0xaryam.github.io/aryam-website/
 
 ---
 
-## 📄 License
+## 🌟 About This Website
 
-This project was created for educational purposes as part of the Smart Methods training program.
+This website serves as my personal portfolio, where I introduce myself, share my background, and showcase my journey, skills, and future projects. It represents my online presence and will continue to grow as I gain more experience
