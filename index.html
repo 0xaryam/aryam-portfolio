@@ -21,7 +21,7 @@
 <meta name="twitter:title" content="Aryam Aseiri — Data Scientist">
 <meta name="twitter:description" content="Building intelligent systems at the intersection of AI and real-world impact.">
 <meta name="twitter:image" content="https://proaryam-x100.github.io/aryam-portfolio/preview.png">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Playfair+Display:wght@700;900&family=DM+Mono:wght@300;400;500&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
   :root {
     --green: #00ff87;
@@ -44,7 +44,7 @@
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     background: var(--bg);
     color: var(--text);
     overflow-x: hidden;
@@ -52,19 +52,6 @@
   }
 
   /* ── PAGE TRANSITIONS ── */
-  .page-transition {
-    position: fixed; inset: 0;
-    background: var(--bg);
-    z-index: 99998;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    pointer-events: none;
-  }
-  .page-transition.in  { animation: transIn  0.4s cubic-bezier(0.76,0,0.24,1) forwards; }
-  .page-transition.out { animation: transOut 0.4s cubic-bezier(0.76,0,0.24,1) forwards; }
-  @keyframes transIn  { from{transform:scaleY(0)} to{transform:scaleY(1)} }
-  @keyframes transOut { from{transform:scaleY(1)} to{transform:scaleY(0); transform-origin:top} }
-
   /* ── CURSOR UPGRADE ── */
   .cursor-trail {
     width: 6px; height: 6px;
@@ -99,7 +86,7 @@
   }
   .timeline-dot.active { background: var(--green); }
   .timeline-year {
-    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    font-family: 'Inter', sans-serif; font-size: 0.7rem;
     color: var(--green); letter-spacing: 0.1em;
     margin-bottom: 6px; text-transform: uppercase;
   }
@@ -163,7 +150,7 @@
     background: var(--surface2); border: 1px solid var(--border-green);
     display: flex; align-items: center; justify-content: center;
     font-size: 0.8rem; font-weight: 700; color: var(--green);
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
   }
   .testimonial-name { font-size: 0.78rem; font-weight: 700; color: var(--text); }
   .testimonial-role { font-size: 0.65rem; color: var(--text-dim); letter-spacing: 0.05em; }
@@ -240,7 +227,7 @@
   }
   @keyframes loadBar { to { width: 100%; } }
   .loader-pct {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.7rem; color: var(--text-dim);
     letter-spacing: 0.15em;
   }
@@ -274,7 +261,7 @@
     transition: width 0.1s linear;
   }
   .loader-pct {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.7rem; color: var(--text-dim);
     letter-spacing: 0.15em;
   }
@@ -356,7 +343,7 @@
     padding: 0 60px;
   }
   .filter-btn {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.7rem; letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--text-muted);
@@ -429,7 +416,7 @@
   nav {
     position: fixed; top: 0; left: 0; right: 0;
     z-index: 100;
-    padding: 20px 60px;
+    padding: 18px 60px;
     display: flex; align-items: center; justify-content: space-between;
     background: rgba(5,10,6,0.8);
     backdrop-filter: blur(20px);
@@ -437,12 +424,36 @@
   }
 
   .nav-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-decoration: none;
+    flex-shrink: 0;
+    line-height: 1.1;
+  }
+
+  .nav-logo-name {
     font-family: 'Merriweather', serif;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: var(--green);
-    letter-spacing: 0.05em;
-    text-decoration: none;
+    letter-spacing: 0.04em;
+  }
+
+  .nav-logo-tag {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
   }
 
   .nav-pill {
@@ -458,7 +469,7 @@
   .nav-pill a {
     position: relative;
     display: block;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.72rem;
     color: var(--text-muted);
     text-decoration: none;
@@ -558,7 +569,7 @@
   .hero-name span { color: var(--green); }
 
   .hero-title {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     color: var(--text-muted);
     margin: 20px 0 32px;
@@ -593,7 +604,7 @@
     padding: 14px 28px;
     background: #00b360;
     color: #020d04;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.08em;
@@ -618,7 +629,7 @@
     padding: 14px 28px;
     background: rgba(0,0,0,0.4);
     color: var(--text-muted);
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -1114,7 +1125,7 @@
     border-radius: 8px;
     padding: 14px 16px;
     color: var(--text);
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.82rem;
     transition: border-color 0.3s, box-shadow 0.3s;
     outline: none;
@@ -1135,7 +1146,7 @@
     color: #020d04;
     border: none;
     border-radius: 8px;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.12em;
@@ -1238,46 +1249,40 @@
     50% { opacity: 0; }
   }
 
-  .lang-btn {
+  .lang-switch {
     display: flex;
     align-items: center;
-    gap: 7px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    background: transparent;
+    background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
-    padding: 8px 14px;
-    cursor: none;
-    transition: all 0.35s ease;
-    letter-spacing: 0.08em;
+    padding: 3px;
+    height: 38px;
     flex-shrink: 0;
-    position: relative;
-    overflow: hidden;
+    gap: 2px;
   }
 
-  .lang-btn::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at center, rgba(0,255,135,0.15), transparent 70%);
-    opacity: 0;
-    transition: opacity 0.35s ease;
+  .lang-opt {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+    background: transparent;
+    border: none;
+    border-radius: 7px;
+    padding: 0 12px;
+    height: 100%;
+    cursor: none;
+    transition: all 0.3s ease;
   }
 
-  .lang-btn:hover::before { opacity: 1; }
+  .lang-opt:hover { color: var(--text-muted); }
 
-  .lang-btn:hover {
-    border-color: var(--green);
-    color: var(--green);
-    box-shadow: 0 0 18px rgba(0,255,135,0.25), inset 0 0 12px rgba(0,255,135,0.08);
-    transform: translateY(-1px);
+  .lang-opt.active {
+    background: var(--green);
+    color: #020d04;
+    box-shadow: 0 0 14px rgba(0,255,135,0.3);
   }
-
-  .lang-globe { font-size: 0.9rem; line-height: 1; }
-  .lang-text { line-height: 1; }
 
   .theme-btn {
     display: flex;
@@ -1338,6 +1343,8 @@
   body.ar { direction: rtl; font-family: 'Tajawal', sans-serif; }
   body.ar .hero-content { direction: rtl; }
   body.ar .hero-name { text-align: right; font-family: 'Playfair Display', serif; }
+  body.ar .nav-logo-name { font-family: 'Tajawal', sans-serif; }
+  body.ar .nav-logo-tag { font-family: 'Tajawal', sans-serif; letter-spacing: 0.1em; }
   body.ar .hero-tag { direction: rtl; }
   body.ar .hero-title { text-align: right; direction: rtl; }
   body.ar .hero-desc { text-align: right; font-family: 'Tajawal', sans-serif; font-size: 1rem; line-height: 2; }
@@ -1514,8 +1521,6 @@
 </div>
 
 <!-- PAGE TRANSITION -->
-<div class="page-transition" id="pageTransition"></div>
-
 <!-- PARTICLES -->
 <canvas id="particles"></canvas>
 
@@ -1528,7 +1533,10 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#home" class="nav-logo">ARYAM ASEIRI</a>
+  <a href="#home" class="nav-logo">
+    <span class="nav-logo-name" id="navLogoName">Aryam Aseiri</span>
+    <span class="nav-logo-tag" id="navLogoTag">Statistics</span>
+  </a>
   <ul class="nav-pill">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -1538,17 +1546,20 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 
-  <button class="lang-btn" id="langBtn" onclick="toggleLang()">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-  </button>
+  <div class="nav-actions">
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-opt active" id="langOptEn" onclick="setLang('en')">EN</button>
+      <button class="lang-opt" id="langOptAr" onclick="setLang('ar')">ع</button>
+    </div>
 
-  <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle theme">
-    <svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-  </button>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle theme">
+      <svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
 
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <!-- Mobile Menu -->
@@ -2202,8 +2213,8 @@
 
   let currentLang = 'en';
 
-  function toggleLang() {
-    currentLang = currentLang === 'en' ? 'ar' : 'en';
+  function setLang(lang) {
+    currentLang = lang;
     applyLang(currentLang);
   }
 
@@ -2216,8 +2227,9 @@
     document.documentElement.setAttribute('lang', lang);
     document.documentElement.setAttribute('dir', isAr ? 'rtl' : 'ltr');
 
-    // lang button — update tooltip only (icon stays)
-    document.getElementById('langBtn').title = isAr ? 'Switch to English' : 'التبديل للعربية';
+    // lang switch active state
+    document.getElementById('langOptEn').classList.toggle('active', !isAr);
+    document.getElementById('langOptAr').classList.toggle('active', isAr);
 
     // nav
     document.querySelectorAll('.nav-pill a').forEach((a, i) => a.textContent = t.nav[i]);
@@ -2227,6 +2239,10 @@
     document.querySelector('.hero-name').innerHTML = isAr
       ? 'أريام<br><span>العسيري</span>'
       : 'ARYAM<br><span>ASEIRI</span>';
+
+    // nav logo
+    document.getElementById('navLogoName').textContent = isAr ? 'أريام العسيري' : 'Aryam Aseiri';
+    document.getElementById('navLogoTag').textContent = isAr ? 'إحصاء' : 'Statistics';
 
     // hero tag & content
     document.querySelector('.hero-tag').innerHTML = t.heroTag;
@@ -2427,20 +2443,13 @@
     }
   }
 
-  // ── PAGE TRANSITIONS (anchor links) ──
+  // ── SMOOTH ANCHOR NAVIGATION (no black-screen wipe) ──
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       const target = document.querySelector(link.getAttribute('href'));
       if (!target) return;
       e.preventDefault();
-      const pt = document.getElementById('pageTransition');
-      pt.classList.add('in');
-      setTimeout(() => {
-        target.scrollIntoView({ behavior: 'instant' });
-        pt.classList.remove('in');
-        pt.classList.add('out');
-        setTimeout(() => pt.classList.remove('out'), 400);
-      }, 380);
+      target.scrollIntoView({ behavior: 'smooth' });
     });
   });
 
